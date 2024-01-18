@@ -6,7 +6,7 @@ const app: Express = express();
 const port = process.env.PORT || 5000;
 
 app.get("/", (req: Request, res: Response) => {
-  res.json("Express + TypeScript Server");
+  res.json("You know its working stop extra checking, mumu!!!");
 });
 
 if (!process.env.MONGO_URI) {
