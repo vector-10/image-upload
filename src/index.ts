@@ -1,14 +1,20 @@
 import express, { Express, Request, Response } from "express";
 import connectToMongoDB from "./database/connect";
-import { ImageModel, IImage } from "./models/imageModel";
+import imageRoute from "./routes/imageRoute";
 import 'dotenv/config';
 
 const app: Express = express();
 const port = process.env.PORT || 4000;
 
+//sample GET route to test the server
 app.get("/", (req: Request, res: Response) => {
-  res.json("You know its working stop extra checking, mumu!!!");
+  res.json({message: "Hello from Server"});
 });
+
+//middlewares
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use('/api/v1', imageRoute);
 
 if (!process.env.MONGO_URI) {
   console.error('MONGO_URI is not defined in the environment variables.');
