@@ -1,6 +1,9 @@
 # Image upload (POST) and retreival (GET) API 
 
-This task this project completes is a GET and POST request to store an image file to mongoDB atlas
+This task this project completes is a GET and POST request to store an image file to mongoDB atlas.
+
+The primary goal of this project is to streamline the management of image uploads and retrievals via a RESTful API. Using technologies such as Node.js, Express, MongoDB, and Multer, the project offers a user-friendly solution for securely storing and retrieving images.
+
 
 
 Link to documnetation  (https://docs.google.com/document/d/1X1R1udIrvv0J3INI9aDzvfMghtzXpk9IJsVfYdH2Exw/edit?usp=sharing)
