@@ -14,7 +14,9 @@ app.get("/", (req: Request, res: Response) => {
 //middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use('/api/v1', imageRoute);
+app.use('/api', imageRoute);
+
+
 
 if (!process.env.MONGO_URI) {
   console.error('MONGO_URI is not defined in the environment variables.');
