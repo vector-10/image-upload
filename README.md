@@ -2,6 +2,9 @@
 
 This task this project completes is a GET and POST request to store an image file to mongoDB atlas
 
+
+Link to documnetation  (https://docs.google.com/document/d/1X1R1udIrvv0J3INI9aDzvfMghtzXpk9IJsVfYdH2Exw/edit?usp=sharing)
+
 1. **POST api/upload:** To upload (POST) an image and send it to the database.
 2. **GET api/get_image/:id:** To return GET the image back successfully from the mongoDb Atlas database using the ID.
 
@@ -13,7 +16,7 @@ This task this project completes is a GET and POST request to store an image fil
 - Image upload to database
 - Return imgaes through secure base64 file methods.
 - MongoDB Atlas Storage.
-- selection of specific file sizez only
+- selection of specific file size only
 
 
 ### Prerequisites
